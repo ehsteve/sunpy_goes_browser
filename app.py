@@ -1,5 +1,5 @@
 """
-A web app to browse GOES data
+A web app to browse GOES data based on SunPy
 """
 
 import flask
