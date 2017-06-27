@@ -1,12 +1,2 @@
-gunicorn
+gunicorn==19.6.0
 flask-bootstrap
-Flask
-astropy
-sunpy
-sqlalchemy
-scikit-image
-glymur
-suds-jurko
-beautifulsoup4
-requests
-bokeh

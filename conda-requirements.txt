@@ -1,0 +1,5 @@
+python=3
+Flask
+astropy
+sunpy
+bokeh
