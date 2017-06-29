@@ -12,6 +12,8 @@
     <link
         href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.6.min.css"
         rel="stylesheet" type="text/css"/>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.js"/></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.6.min.js"/></script>
     {{ js_resources|indent(4)|safe }}
     {{ css_resources|indent(4)|safe }}
     {{ plot_script|indent(4)|safe }}
@@ -44,8 +46,5 @@
     </table>
     <br/>
     <p>Powered by <a href="http://sunpy.org/">SunPy</a>, <a href="http://flask.pocoo.org/">Flask</a>, and <a href="http://bokeh.pydata.org/en/latest/">Bokeh</a>.</p>
-
-    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.js"/></script>
-    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.6.min.js"/></script> 
   </body>
 </html>
