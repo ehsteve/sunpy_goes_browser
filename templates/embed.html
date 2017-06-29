@@ -7,45 +7,44 @@
     <title>SunPy GOES Browser</title>
 
     <link
-        href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.css"
-        rel="stylesheet" type="text/css">
+        href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.css"
+        rel="stylesheet" type="text/css"/>
     <link
-        href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.0.min.css"
-        rel="stylesheet" type="text/css">
-
-    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.js"></script>
-    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.0.min.js"></script>
+        href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.6.min.css"
+        rel="stylesheet" type="text/css"/>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.js"/></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.6.min.js"/></script>
     {{ js_resources|indent(4)|safe }}
     {{ css_resources|indent(4)|safe }}
     {{ plot_script|indent(4)|safe }}
 
   </head>
   <body>
-      <table border=0>
+      <table style="border: none;">
         <tr>
-            <td valign=top width=210>
-                <p>SunPy GOES Browser</p><br>
+            <td style="vertical-align: top; width: 210px;">
+                <p>SunPy GOES Browser</p><br/>
             <!-- A simple form for changing the graph -->
             <form name="time_select" method='GET'>
                 From:
-                <input type="text" name="_from" value="{{ _from }}" /><br>
+                <input type="text" name="_from" value="{{ _from }}" /><br/>
                 To:
                 <input type="text" name="_to" value="{{ _to }}" />
-                <br>
-                <button type="submit">Submit</button><br>
+                <br/>
+                <button type="submit">Submit</button><br/>
                 <button name="prev" type="submit">Previous</button>
-                <button name="next" type="submit">Next</button><br>
+                <button name="next" type="submit">Next</button><br/>
                 <button name="prev_hour" type="submit">Previous Hour</button>
-                <button name="next_hour" type="submit">Next Hour</button><br>
+                <button name="next_hour" type="submit">Next Hour</button><br/>
                 <button name="prev_day" type="submit">Previous Day</button>
-                <button name="next_day" type="submit">Next Day</button><br>
+                <button name="next_day" type="submit">Next Day</button><br/>
             </form>
             <td>
                 {{ plot_div|indent(4)|safe }}
             </td>
         </tr>
     </table>
-    <br>
-    <p>Powered by SunPy, Flask, and Bokeh</p>
+    <br/>
+    <p>Powered by <a href="http://sunpy.org/">SunPy</a>, <a href="http://flask.pocoo.org/">Flask</a>, and <a href="http://bokeh.pydata.org/en/latest/">Bokeh</a>.</p>
   </body>
 </html>
