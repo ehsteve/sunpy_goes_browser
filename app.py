@@ -151,4 +151,4 @@ def index():
 
 if __name__ == "__main__":
     print(__doc__)
-    app.run(debug=True)
+    app.run(debug=False)
